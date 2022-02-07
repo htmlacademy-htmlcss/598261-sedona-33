@@ -98,6 +98,8 @@ html{
     background: url('../images/index-background.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
+    padding-top: 51px;
+    padding-bottom: 82px;
 }
 
 .sedona-block{
@@ -110,6 +112,21 @@ html{
     line-height: 36px;
     text-align: center;
     color: #333333;
+}
+
+.welcome-img{
+    display: block;
+    margin: 0px auto 11px auto;
+}
+
+.georgeous-img{
+    display: block;
+    margin: 0 auto 53px auto;
+}
+
+.sedona-because-img{
+    display: block;
+    margin: 0 auto 82px auto;
 }
 
 .page-container{
@@ -263,6 +280,11 @@ search-hotel-text {
 
 
 /*Страница каталог*/
+
+.catalog-container{
+    width: 1056px;
+    margin: 0 auto;
+}
 
 .filter-block {
     background: url('../images/catalog-background\ 1.jpg');
