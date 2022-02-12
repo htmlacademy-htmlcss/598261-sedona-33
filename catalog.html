@@ -12,7 +12,7 @@
     <nav class="navigation">
       <a class="logo"></a>
       <span class="visually-hidden">Логотип сайта</span>
-      <img src="./images/logo.jpg" width="139" height="70" alt="Логотип сайта">
+      <img class="img-logo" src="./images/logo.png" width="139" height="70" alt="Логотип сайта">
 
       <ul class="navigation-menu">
         <li class="navigation-menu-item">
@@ -37,10 +37,10 @@
             <span class="visually-hidden">Мне нравится</span>
           </a>
         </li>
-        <li class="navigation-user-menu-item">
-          <a class="go-link navigation-link button">Хочу сюда!</a>
-        </li>
       </ul>
+      <div class="go-link-wrapper">
+        <a class="go-link button">Хочу сюда!</a>
+      </div>
 
     </nav>
   </header>
@@ -60,7 +60,7 @@
           </ul>
 
           <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="hotel-filter-group">
+            <fieldset class="hotel-filter-group infrastructure">
               <legend class="hotel-filter-title">Инфраструктура:</legend>
               <label class="infrastructure-item">
                 <input type="checkbox" name="swimming-pool" checked>Бассейн
@@ -73,7 +73,7 @@
               </label>
             </fieldset>
 
-            <fieldset class="hotel-filter-group">
+            <fieldset class="hotel-filter-group type-housing">
               <legend class="hotel-filter-title">Тип жилья:</legend>
               <label class="type-housing-item">
                 <input type="radio" checked name="housing" value="hotel">Гостиница
@@ -86,7 +86,7 @@
               </label>
             </fieldset>
 
-            <fieldset class="hotel-filter-group">
+            <fieldset class="hotel-filter-group price-block">
               <legend class="hotel-filter-title">Стоимость, ₽:</legend>
               <label class="visually-hidden" for="from"></label>
               <input class="price" placeholder="от" id="from">
@@ -95,7 +95,7 @@
               <div class="range-multiply"></div>
             </fieldset>
 
-            <div>
+            <div class="hotel-filter-button-group">
               <button class="filter-aplly-btn" type="submit">Применить</button>
               <button class="filter-reset-btn" type="reset">Отменить</button>
             </div>
@@ -106,10 +106,12 @@
       <div class="catalog-container">
         <div class="sort">
           <p class="hotels-count">Найдено гостиниц: 38</p>
-          <label class="visually-hidden" for="sort-hotel"> Сортировка гостиниц</label>
-          <select class="sort-price" id="sort-hotel">
-            <option>Сначала дешёвые</option>
-          </select>
+          <div class="sort-price-block">
+            <label class="visually-hidden" for="sort-hotel"> Сортировка гостиниц</label>
+            <select class="sort-price" id="sort-hotel">
+              <option>Сначала дешёвые</option>
+            </select>
+          </div>
         </div>
 
         <ul class="hotel-list">
@@ -187,7 +189,10 @@
           </li>
         </ul>
 
-        <a class="load-more button-blue">Загрузить ещё</a>
+        <div class="load-more-wrapper">
+          <a class="load-more button-blue">Загрузить ещё</a>
+        </div>
+
         <div class="pagination-block">
 
           <ul class="pagination">
@@ -212,14 +217,13 @@
           </ul>
 
           <div class="pagination-hotel-count">
-            <label class="pagination-header-count">Гостиниц на странице:
-              <select class="pagination-select-count">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
-            </label>
+            <label class="pagination-header-count" for="pagination-select">Гостиниц на странице: </label>
+            <select class="pagination-select-count" id="pagination-select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
           </div>
         </div>
       </div>
@@ -228,7 +232,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Подписка</h2>
           <p class="subscribe-preview">Подпишитесь на рассылку</p>
-          <p class="subscribe-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-info">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <label class="visually-hidden" for="email">Email</label>
           <input class="input-email-text" type="email" placeholder="Ваш email" id="email">
           <button class="subscribe-submit-button" type="submit">Подписаться</button>
