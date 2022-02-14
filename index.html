@@ -12,7 +12,7 @@
     <nav class="navigation">
       <a class="logo"></a>
       <span class="visually-hidden">Логотип сайта</span>
-      <img src="./images/logo.jpg" width="139" height="70" alt="Логотип сайта">
+      <img class="img-logo" src="./images/logo.png" width="139" height="70" alt="Логотип сайта">
 
       <ul class="navigation-menu">
         <li class="navigation-menu-item">
@@ -37,10 +37,10 @@
             <span class="visually-hidden">Мне нравится</span>
           </a>
         </li>
-        <li class="navigation-user-menu-item">
-          <a class="go-link navigation-link button">Хочу сюда!</a>
-        </li>
       </ul>
+      <div class="go-link-wrapper">
+        <a class="go-link button">Хочу сюда!</a>
+      </div>
 
     </nav>
   </header>
@@ -61,50 +61,57 @@
       <ul class="advantages">
         <li class="advantages-item advantages-seagull-fill-background">
           <div class="advantages-left-row-one">
-            <h3 class="advantage-header">Настоящий городок</h3>
+            <h3 class="advantage-header advantage-header-number advantage-header-width">Настоящий городок</h3>
             <span class="advantages-number">— №1 —</span>
-            <p class="advantages-comment">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="advantages-comment city-comment">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <img src="./images/photo-1.jpg" width="800" height="384" alt="Седона вид с балкона">
         </li>
         <li class="advantages-item advantages-seagull-background advanteges-block">
-          <h3 class="advantage-header">Жильё</h3>
-          <p class="advantages-comment advantages-comment-dark-black">Рекомендуем пожить в настоящем мотеле, всё как в
+          <h3 class="advantage-header advantage-not-numb-header">Жильё</h3>
+          <p class="advantages-comment advantages-comment-dark-black advantages-not-numb-desc">Рекомендуем пожить в
+            настоящем мотеле, всё как в
             кино!</p>
         </li>
         <li class="advantages-item advantages-white-background advanteges-block">
-          <h3 class="advantage-header">Еда</h3>
-          <p class="advantages-comment advantages-comment-dark-black">Всегда заказывайте топовый фирменный бургер, вы не
+          <h3 class="advantage-header advantage-not-numb-header">Еда</h3>
+          <p class="advantages-comment advantages-comment-dark-black advantages-not-numb-desc">Всегда заказывайте
+            топовый фирменный бургер, вы не
             разочаруетесь!</p>
         </li>
         <li class="advantages-item advantages-seagull-background advanteges-block">
-          <h3 class="advantage-header">Сувениры</h3>
-          <p class="advantages-comment advantages-comment-dark-black">Не только китайского, но и настоящего местного
+          <h3 class="advantage-header advantage-not-numb-header">Сувениры</h3>
+          <p class="advantages-comment advantages-comment-dark-black advantages-not-numb-desc">Не только китайского, но
+            и настоящего местного
             производства!</p>
         </li>
         <li class="advantages-item advantages-seagull-fill-background bridge">
           <img src="./images/photo-2.jpg" width="800" height="384" alt="Мост дьявола" />
           <div class="bridge-description">
-            <h3 class="advantage-header">Там есть мост дьявола</h3>
+            <h3 class="advantage-header bridge-header">Там есть мост дьявола</h3>
             <span class="advantages-number advantages-number-dark-black">— №2 —</span>
-            <p class="advantages-comment ">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <p class="advantages-comment bridge-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
         </li>
-        <li class="advantages-item advantages-seagull-background advanteges-block">
-          <h3 class="advantage-header">Небольшая площадь</h3>
+        <li class="advantages-item advantages-seagull-background advanteges-block advantages-number-padding">
+          <h3 class="advantage-header advantage-header-number advantage-header-width">Небольшая площадь</h3>
           <span class="advantages-number advantages-number-dark-black">— №3 —</span>
-          <p class="advantages-comment advantages-comment-dark-black">Все достопримечательности находятся очень близко
+          <p class="advantages-comment advantages-comment-dark-black advantages-number-desc">Все достопримечательности
+            находятся очень близко
           </p>
         </li>
-        <li class="advantages-item advantages-seagull-twenty-percent-background advanteges-block">
-          <h3 class="advantage-header">Красивая дорога</h3>
+        <li
+          class="advantages-item advantages-seagull-twenty-percent-background advanteges-block advantages-number-padding">
+          <h3 class="advantage-header advantage-header-number advantage-header-width">Красивая дорога</h3>
           <span class="advantages-number advantages-number-dark-black">— №4 —</span>
-          <p class="advantages-comment advantages-comment-dark-black">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="advantages-comment advantages-comment-dark-black  advantages-number-desc">Ехать в Седону из
+            Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="advantages-item advantages-seagull-background advanteges-block">
-          <h3 class="advantage-header">Мало туристов</h3>
+        <li class="advantages-item advantages-seagull-background advanteges-block advantages-number-padding">
+          <h3 class="advantage-header advantage-header-number advantage-header-width-small">Мало туристов</h3>
           <span class="advantages-number advantages-number-dark-black">— №5 —</span>
-          <p class="advantages-comment advantages-comment-dark-black">Большинство едет в Гранд Каньон и толпится там</p>
+          <p class="advantages-comment advantages-comment-dark-black  advantages-number-desc">Большинство едет в Гранд
+            Каньон и толпится там</p>
         </li>
       </ul>
 
@@ -112,10 +119,8 @@
         <div class="search-hotel-container">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="search-hotel-header">Заинтересовались?</p>
-          <p class="search-hotel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
-            в
-            Седоне
-          </p>
+          <p class="search-hotel-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+            гостиниц в Седоне</p>
           <a class="search-hotel-button button">Поиск гостиницы в Седоне</a>
         </div>
       </div>
@@ -124,7 +129,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="visually-hidden">Подписка</h2>
           <p class="subscribe-preview">Подпишитесь на рассылку</p>
-          <p class="subscribe-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-info">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <label class="visually-hidden" for="email"></label>
           <input class="input-email-text" type="email" placeholder="Ваш email" id="email" />
           <button class="subscribe-submit-button" type="submit">Подписаться</button>
@@ -136,15 +141,15 @@
   <footer class="footer-index">
     <div class="footer-container">
       <ul class="social">
-        <li>
+        <li class="social-item">
           <span class="visually-hidden">Twitter</span>
           <a class="twitter-link" href=" https://twitter.com/htmlacademy_ru"></a>
         </li>
-        <li>
+        <li class="social-item">
           <span class="visually-hidden">Facebook</span>
           <a class="facebook-link" href="https://www.facebook.com/htmlacademy"></a>
         </li>
-        <li>
+        <li class="social-item">
           <span class="visually-hidden">Youtube</span>
           <a class="youtube-link" href=" https://www.youtube.com/c/HTMLAcademyRUS"></a>
         </li>
