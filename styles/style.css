@@ -80,7 +80,30 @@ html{
 }
 
 .navigation-user-menu-item{
-    outline: 2px solid #000000;
+    
+}
+
+.navigation-icon{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.like-link{
+    position: relative;
+}
+
+.like-icon{
+    position: relative;
+}
+
+.like-icon::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '12';
+    color: #000000;
+
 }
 
 .go-link{
@@ -104,6 +127,8 @@ html{
     background-color: #756257;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .button-blue {
@@ -126,6 +151,27 @@ html{
     text-decoration: none;
     color: #000000;
     display: block;
+}
+
+.navigation-user-menu-item{
+    position: relative;
+}
+
+.like-link::after{
+    position: absolute;
+    border-radius: 100%;
+    background: #7DB54F;
+    content: '12';
+    color: #ffffff;
+    font-size: 10px;
+    width: 19px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 5px
 }
 
 .sedona-block .sedona-preview {
@@ -289,8 +335,37 @@ html{
 }
 
 .advantages-item .advantage-not-numb-header{
-    padding-top: 184px;
     margin-bottom: 20px;
+}
+
+.living-block{
+    padding-top: 89px;
+}
+
+.living::before{
+    display: block;
+    content: url('../images/housing-icon.svg');
+    margin-bottom: 23px;
+}
+
+.food-block{
+    padding-top: 91px;
+}
+
+.food::before{
+    display: block;
+    content: url('../images/food.svg');
+    margin-bottom: 23px;
+}
+
+.gift-block{
+    padding-top: 85px;
+}
+
+.gift::before{
+    display: block;
+    content: url('../images/gift.svg');
+    margin-bottom: 23px;
 }
 
 
@@ -417,18 +492,24 @@ search-hotel-text {
 
 /*Футер*/
 
+.social-container{
+    padding-top: 9px;
+}
+
 .social{
+    padding-top: 9px;
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex;
+    width: 107px;
+    justify-content: space-between;
 
 }
 
 .social-item{
     min-width: 10px;
     min-height: 20px;
-    outline: 2px solid #000000;
 }
 
 .telephone {
